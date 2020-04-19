@@ -1,26 +1,32 @@
+:root{
+    --main-bg-color:lightgrey;
+    --button-bg-color:grey;
+    --display-bg-color:rgb(70, 70, 70);
+    --display-text-color:rgb(0, 247, 0);
+}
 body{
     margin:0px;
+    background-color:var(--main-bg-color);
 }
 #container{  
     display:flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
-    width:100vw;
+    height:100VH;
+    width:100VW;
+    /* margin:-10px; */
+    /* background-color: black; */
 }
 #calcContainer{
     display: flex;
     flex-wrap: wrap;
-    height:70vh;
-    width: 40vw;
+    height:70%;
+    width: 40%;
     border: 1px solid black;
-}
-@media only screen 
-and (min-width: 273px)
-and (max-width: 1000px) {
-    #calcContainer{
-        width:90%;
-    }
+    border-bottom: 2px solid black;
+    background-size: contain;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    box-sizing: border-box;
 }
 #screen{
     display:flex;
@@ -29,20 +35,26 @@ and (max-width: 1000px) {
     justify-content: flex-end;
     align-items: center;
     border-bottom: 1px solid black;
+    background-color: var(--display-bg-color);
 }
 #displayText{
     font-size: 35px;
     margin-right: 3vw;
+    font-family: 'Lato', sans-serif;
+    color:var(--display-text-color);
 }
 #buttonContainer{
     display:flex;
     flex-direction:column;
     height:85%;
     width:100%;
+    background-color: var(--button-bg-color);
+    box-sizing: border-box;
 }
 .buttonRow{
     display: flex;
     flex:1;
+    box-sizing: border-box;
 }
 .button{
     flex:1;
@@ -50,4 +62,13 @@ and (max-width: 1000px) {
     justify-content: center;
     align-items: center;
     font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+@media only screen 
+and (min-width: 273px)
+and (max-width: 1000px) {
+    #calcContainer{
+        width:90%;
+    }
+    
 }

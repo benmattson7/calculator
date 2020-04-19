@@ -57,7 +57,7 @@ function evaluate(input) {
     return operate(operator, firstArg, secondArg);
 }
 function buildButtons() {
-    buttonLabels = ["+", "-", "/", "*", 1, 2, 3, "Clear", 4, 5, 6, "=", 7, 8, 9, "0"];
+    buttonLabels = ["+", "-", "/", "*", 7, 8, 9, "Clear", 4, 5, 6, "=", 1, 2, 3, "0"];
     k = 0;
     var toAdd = document.createDocumentFragment();
     for (var i = 1; i <= 4; i++) {
