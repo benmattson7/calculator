@@ -91,6 +91,7 @@ function buildButtons() {
             newDiv.className = 'button';
             newDiv.id = id;
             newDiv.addEventListener("click", function () { buttonClicked(this.id) });
+            newDiv.addEventListener("mouseenter",function(){this.classList.add("hvr-fade");})
             newDiv.innerHTML = `<p class = buttonText>${id}</div>`;
             k++;
             newRow.appendChild(newDiv);
