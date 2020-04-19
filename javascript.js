@@ -1,6 +1,7 @@
 const container = document.querySelector("#container");
 const buttonContainer = document.querySelector("#buttonContainer")
 const screenDisplay = document.querySelector("#displayText");
+document.addEventListener("touchstart", function(){}, true);
 
 buildButtons();
 
