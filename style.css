@@ -21,8 +21,6 @@ p{
     align-items: center;
     height:100VH;
     width:100VW;
-    /* margin:-10px; */
-    /* background-color: black; */
 }
 #calcContainer{
     display: flex;
